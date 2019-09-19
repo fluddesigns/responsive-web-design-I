@@ -42,7 +42,7 @@ body{
 }
 
 .header a{
-	color:lightgray;
+	color:gray;
 	text-decoration: none;
 }
 
@@ -173,4 +173,31 @@ footer p{
     .gettingStartedImg{
         display: none;
     }
+}
+
+@media(max-width: 500px){
+
+    body{
+        width: 100%;
+    }
+
+    .header{
+        flex-direction: column-reverse;
+    }
+
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav a{
+        width:100%;
+        padding:2%;
+        border-bottom: 1px solid black;
+    }
+
+    .services{
+        border-top:1px solid black;
+    }
+
 }
